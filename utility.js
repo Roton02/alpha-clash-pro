@@ -43,3 +43,19 @@ function getARandomAlphabet(){
 //     // console.log(index, alphabet);
 //     return alphabet;
 // }
+function getElementTextById(element){
+    const eleemntText = document.getElementById(element)
+    const text = eleemntText.innerText;
+    return text;
+}
+
+function getElementById(element){
+    const elements = document.getElementById(element);
+    const elementValue = elements.innerText;
+    const Value = parseInt(elementValue);
+    return Value;
+}
+function setElementById(element,value){
+    const setElement = document.getElementById(element);
+    setElement.innerText= value;
+}

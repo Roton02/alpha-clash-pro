@@ -1,13 +1,45 @@
-function hideElementByID(element){
-    const elements = document.getElementById(element);
-    elements.classList.add('hidden');
-    // console.log('mamu distarb kn dicce ');
+function hideElementById(elementId) {
+    const element = document.getElementById(elementId);
+    element.classList.add('hidden');
 }
-function showElementById(element){
- const elements = document.getElementById(element);
- elements.classList.remove('hidden')
+
+function showElementById(elementId) {
+    const element = document.getElementById(elementId);
+    element.classList.remove('hidden');
 }
- function setBgColor(element){
-    const elements = document.getElementById(element);
-    elements.classList.add('bg-pink-300')
- }
+
+function setBackgroundColorById(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.add('bg-orange-400');
+}
+
+function removeBackgroundColorById(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.remove('bg-orange-400');
+}
+
+function getARandomAlphabet(){
+    const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
+    const alphabets = alphabetString.split('');
+
+    const randomNumber = Math.random()*25;
+    const index = Math.round(randomNumber);
+
+    const alphabet = alphabets[index];
+    return alphabet;
+}
+
+// function getARandomAlphabet() {
+//     // get or create an alphabet array
+//     const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
+//     const alphabets = alphabetString.split('');
+//     // console.log(alphabets);
+
+//     // get a random index between 0 -25
+//     const randomNumber = Math.random() * 25;
+//     const index = Math.round(randomNumber);
+    
+//     const alphabet = alphabets[index];
+//     // console.log(index, alphabet);
+//     return alphabet;
+// }

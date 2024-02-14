@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha- Clash-Pro</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/2596ecf14d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class=" bg-[#1E1E1E] min-h-screen bg-[url(images/background.png)] bg-no-repeat bg-center">
+        <div>
+            <!-- star Home section -->
+        <section  id="Home-section" class=" flex flex-col justify-center items-center min-h-screen ">
+            <div class=" text-white text-center space-y-8">
+                <h1 class=" text-8xl font-bold uppercase">ALPHABET CLASH</h1>
+                <p class="text-2xl">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+                <button onclick="homeBtnClicked()" class="btn bg-white text-xl font-extrabold">Play Now</button>
+            </div>
+        </section>
+        <!--  game section -->
+        <section id="playground-section" class="hidden flex flex-col  min-h-screen gap-5">
+            <div class="flex items-center justify-center  pt-20"> 
+                <div class="  artboard artboard-horizontal phone-6 bg-[#ffffffcc] rounded-xl border-[20px] border-[#010313cc]"> 
+                    <span class="flex justify-center text-white "><p class="bg-[#010313cc] p-3 rounded-b-lg font-medium">Don't watch keyboard  while playing...</p></span>
+                    <h1 id="show-elemens" class="text-8xl text-center mt-10 text font-extrabold uppercase">Y</h1>
+                </div>
+            </div>
+            <!-- keybord -->
+            <div>
+                <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd id="q" class="kbd">q</kbd>
+                    <kbd id="w" class="kbd">w</kbd>
+                    <kbd id="e" class="kbd">e</kbd>
+                    <kbd id="r" class="kbd">r</kbd>
+                    <kbd id="t" class="kbd">t</kbd>
+                    <kbd id="y" class="kbd">y</kbd>
+                    <kbd id="u" class="kbd">u</kbd>
+                    <kbd id="i" class="kbd">i</kbd>
+                    <kbd id="o" class="kbd">o</kbd>
+                    <kbd id="p" class="kbd">p</kbd>
+                  </div> 
+                  <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd id="a" class="kbd">a</kbd>
+                    <kbd id="s" class="kbd">s</kbd>
+                    <kbd id="d" class="kbd">d</kbd>
+                    <kbd id="f" class="kbd">f</kbd>
+                    <kbd id="g" class="kbd">g</kbd>
+                    <kbd id="h" class="kbd">h</kbd>
+                    <kbd id="j" class="kbd">j</kbd>
+                    <kbd id="k" class="kbd">k</kbd>
+                    <kbd id="l" class="kbd">l</kbd>
+                  </div> 
+                  <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd id="z" class="kbd">z</kbd>
+                    <kbd id="x" class="kbd">x</kbd>
+                    <kbd id="c" class="kbd">c</kbd>
+                    <kbd id="v" class="kbd">v</kbd>
+                    <kbd id="b" class="kbd">b</kbd>
+                    <kbd id="n" class="kbd">n</kbd>
+                    <kbd id="m" class="kbd">m</kbd>
+                    <kbd id="/" class="kbd">/</kbd>
+                  </div>
+            </div>
+            <!-- lifeline-score -->
+            <div class="flex justify-between px-20">
+                <button class=" btn bg-purple-800 text-white font-semibold px-7 py-2 rounded-full">Life <i class="fa-solid fa-heart"></i> <span>1</span> </button>
+                <button class=" btn bg-green-900 text-white font-semibold px-7 py-2 rounded-full">Score <i class="fa-solid fa-hand-holding-dollar"></i> <span>1</span> </button>
+            </div>
+        </section>
+         <!-- Output section -->
+        <section id=" scrore-sectoin" class="hidden flex flex-col justify-center items-center min-h-screen">
+            <div class=" text-center text-white bg-purple-700 rounded-xl space-y-4 p-8 ">
+                <h1 class="text-5xl"><span class="font-extrabold">Score :</span> 14</h1>
+                <button class="btn bg-white font-extrabold "> Play Now</button>
+                <p class=" text-2xl">Practice can make a perfect man </p>
+            </div>
+        </section>
+        </div>
+    </main>
+    <script src="utility.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
